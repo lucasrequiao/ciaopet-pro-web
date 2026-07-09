@@ -1,0 +1,14 @@
+{
+  "login": {
+    "welcome": "Benvenuto nella tua area riservata!",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Inserisci la tua email",
+    "passwordLabel": "Password",
+    "rememberMe": "Ricordami",
+    "forgotPassword": "Hai dimenticato la password?",
+    "submit": "Accedi"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  }
+}
