@@ -1,0 +1,23 @@
+{
+  "login": {
+    "welcome": "Bem-vindo(a) à sua área reservada!",
+    "subtitle": "Gerencie seu negócio, sua área de clientes e seus animais em um único ecossistema integrado de 360°.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Digite seu e-mail",
+    "passwordLabel": "Senha",
+    "passwordPlaceholder": "Digite sua senha",
+    "rememberMe": "Lembre de mim",
+    "forgotPassword": "Esqueceu sua senha?",
+    "submit": "Entrar",
+    "orContinueWith": "ou continuar com",
+    "footer": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos e Condições",
+      "appPrivacy": "Política de Privacidade do Aplicativo",
+      "help": "Centro de Assistência"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  }
+}

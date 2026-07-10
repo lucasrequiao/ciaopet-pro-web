@@ -1,9 +1,10 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import it from './it.json'
+import pt from './pt.json'
 
 i18n.use(initReactI18next).init({
-    resources: { it: { translation: it } },
+    resources: { it: { translation: it }, pt: { translation: pt } },
     lng: "it",
     fallbackLng: "it",
 })

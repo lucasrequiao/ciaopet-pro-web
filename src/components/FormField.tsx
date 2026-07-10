@@ -12,7 +12,7 @@ type FormFieldProps = {
 export function FormField({ label, htmlFor, required, error, children }: FormFieldProps){
     return (
         <div className="space-y-2">
-            <Label htmlFor={htmlFor}>
+            <Label htmlFor={htmlFor} className="text-primary">
                 {label} 
                 {required && <span className="text-destructive">*</span>}
             </Label>

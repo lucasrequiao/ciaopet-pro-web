@@ -1,12 +1,21 @@
 {
   "login": {
-    "welcome": "Bem-vindo(a) à sua área reservada!",
+    "welcome": "Benvenuto nella tua area riservata!",
+    "subtitle": "Gestisci la tua attività con l'area clienti e i tuoi animali in un unico ecosistema integrato 360°",
     "emailLabel": "Email",
-    "emailPlaceholder": "Digite seu e-mail",
-    "passwordLabel": "Senha",
-    "rememberMe": "Lembre de mim",
-    "forgotPassword": "Esqueceu sua senha?",
-    "submit": "Entrar"
+    "emailPlaceholder": "Inserisci la tua email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Inserisci la password",
+    "rememberMe": "Ricordami",
+    "forgotPassword": "Hai dimenticato la password?",
+    "submit": "Accedi",
+    "orContinueWith": "oppure continua con",
+    "footer": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini e Condizioni",
+      "appPrivacy": "Informativa Privacy App",
+      "help": "Centro Assistenza"
+    }
   },
   "dashboard": {
     "title": "Dashboard"

@@ -21,7 +21,7 @@ export function GalleryPage() {
                         <Checkbox id="remember" />
                         <Label htmlFor="remember">Lembre de mim</Label>
                     </div>
-                    <Button>Entrar</Button>
+                    <Button onSubmit={ (e) => {e.preventDefault(); console.log("login!")} }>Entrar</Button>
                 </div>
             </section>           
         </main>
