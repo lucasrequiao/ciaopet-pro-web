@@ -1,12 +1,12 @@
 {
   "login": {
-    "welcome": "Benvenuto nella tua area riservata!",
+    "welcome": "Bem-vindo(a) à sua área reservada!",
     "emailLabel": "Email",
-    "emailPlaceholder": "Inserisci la tua email",
-    "passwordLabel": "Password",
-    "rememberMe": "Ricordami",
-    "forgotPassword": "Hai dimenticato la password?",
-    "submit": "Accedi"
+    "emailPlaceholder": "Digite seu e-mail",
+    "passwordLabel": "Senha",
+    "rememberMe": "Lembre de mim",
+    "forgotPassword": "Esqueceu sua senha?",
+    "submit": "Entrar"
   },
   "dashboard": {
     "title": "Dashboard"
