@@ -6,10 +6,21 @@ import { Input } from "@/components/ui/input";
 import { PasswordInput } from "@/components/PasswordInput";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-
+import { loginSchema, type LoginFormData } from "@/features/auth/login-schema";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 export function LoginPage() {
     const {t} = useTranslation()
+    const {
+        register,
+        handleSubmit,
+        formState: {errors},
+    } = useForm<LoginFormData>({
+        resolver: zodResolver(loginSchema),
+        defaultValues: { email: "", password: "", rememberMe: false }
+    })
+
     return (
         <AuthLayout 
             footer={
@@ -28,17 +39,14 @@ export function LoginPage() {
                 <p className="text-sm">{t("login.subtitle")}</p>
             </div>
             <form 
-                onSubmit={(e) => {
-                    e.preventDefault()
-                    console.log("login!")
-                }}
+                onSubmit={handleSubmit((data) => console.log("dados válidos:", data))}
                 className="space-y-6"
             >
-                <FormField label={t("login.emailLabel")} htmlFor="email" required>
-                    <Input id="email" placeholder={t("login.emailPlaceholder")} />
+                <FormField label={t("login.emailLabel")} htmlFor="email" required error={errors.email?.message}>
+                    <Input id="email" placeholder={t("login.emailPlaceholder")} type="email" {...register("email")} aria-invalid={!!errors.email}/>
                 </FormField>
-                <FormField label={t("login.passwordLabel")} htmlFor="password" required>
-                    <PasswordInput id="password" placeholder={t("login.passwordPlaceholder")}/>
+                <FormField label={t("login.passwordLabel")} htmlFor="password" required error={errors.password?.message}>
+                    <PasswordInput id="password" placeholder={t("login.passwordPlaceholder")} {...register("password")} aria-invalid={!!errors.password}/>
                 </FormField>
                 <div className="flex items-center justify-between">
                     <div className="flex gap-2 items-center">
