@@ -17,6 +17,11 @@
       "help": "Centro de Assistência"
     }
   },
+  "validation": {
+    "emailRequired": "O e-mail é obrigatório",
+    "emailInvalid": "Formato de e-mail inválido",
+    "passwordRequired": "A senha é obrigatória"
+  },
   "dashboard": {
     "title": "Dashboard"
   }

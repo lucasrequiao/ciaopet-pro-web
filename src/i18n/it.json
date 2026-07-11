@@ -15,12 +15,12 @@
       "terms": "Termini e Condizioni",
       "appPrivacy": "Informativa Privacy App",
       "help": "Centro Assistenza"
-    },
-    "error": {
-      "emptyEmail": "L'email è obbligatoria",
-      "emailFormat": "Formato email non valido",
-      "emptyPassword": "La password è obbligatoria"
     }
+  },
+  "validation": {
+    "emailRequired": "L'email è obbligatoria",
+    "emailInvalid": "Formato email non valido",
+    "passwordRequired": "La password è obbligatoria"
   },
   "dashboard": {
     "title": "Dashboard"

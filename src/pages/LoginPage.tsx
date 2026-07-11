@@ -6,15 +6,18 @@ import { Input } from "@/components/ui/input";
 import { PasswordInput } from "@/components/PasswordInput";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { loginSchema, type LoginFormData } from "@/features/auth/login-schema";
-import { useForm } from "react-hook-form";
+import { createLoginSchema, type LoginFormData } from "@/features/auth/login-schema";
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useMemo } from "react";
 
 export function LoginPage() {
     const {t} = useTranslation()
+    const loginSchema = useMemo(() => createLoginSchema(t), [t])
     const {
         register,
         handleSubmit,
+        control,
         formState: {errors},
     } = useForm<LoginFormData>({
         resolver: zodResolver(loginSchema),
@@ -50,7 +53,14 @@ export function LoginPage() {
                 </FormField>
                 <div className="flex items-center justify-between">
                     <div className="flex gap-2 items-center">
-                        <Checkbox id="remember" />
+                        <Controller 
+                            name="rememberMe" 
+                            control={control} 
+                            render={({ field }) => (
+                                <Checkbox id="remember" checked={field.value} onCheckedChange={field.onChange}/>
+                            )}
+                        >
+                        </Controller>
                         <Label htmlFor="remember" className="text-primary">{t("login.rememberMe")}</Label>
                     </div>
                     <span className="text-sm text-primary hover:underline">{t("login.forgotPassword")}</span>
