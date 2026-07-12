@@ -5,7 +5,7 @@ export function DashboardPage() {
     const {t} = useTranslation()
     return (
         <AppShell>
-            <p></p>
+            <div className="h-[1200px]" />
         </AppShell>
     )
 }

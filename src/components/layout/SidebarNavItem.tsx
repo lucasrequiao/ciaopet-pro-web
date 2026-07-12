@@ -22,8 +22,8 @@ export function SidebarNavItem({ item }: SidebarNavItemProps) {
                 cn(
                     "flex items-center gap-3 rounded-lg px-3 py-2 text-sm",
                     isActive
-                        ? "bg-primary/10 text-primary-dark font-medium"
-                        : "text-muted-foreground hover:bg-muted"
+                        ? "bg-primary/10 text-primary font-medium"
+                        : "text-foreground hover:bg-muted"
                 )
             }
         >

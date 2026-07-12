@@ -1,4 +1,5 @@
-import { LayoutDashboard, Zap, Calendar, AppWindowMac, PhoneCall, ShoppingBag, PersonStanding, Cog, FileText, Container, SquarePercent, SquareActivity, ClipboardType, Bell, Archive, LucideFileText, AlarmClock } from "lucide-react";
+import { LayoutDashboard, Zap, Calendar, AppWindowMac, PhoneCall, ShoppingBag, PersonStanding, Cog, FileText, Container, SquarePercent, 
+    SquareActivity, ClipboardType, Archive, LucideFileText, AlarmClock, PawPrint, Contact, Mail, StickyNotePlus } from "lucide-react";
 
 export const navGroups = [
     {
@@ -21,11 +22,11 @@ export const navGroups = [
     {
         title: "nav.groups.client", 
         items: [
-            { label: "nav.animal", icon: AppWindowMac, to: "/animal" },
-            { label: "nav.client", icon: Calendar, to: "/client" },
+            { label: "nav.animal", icon: PawPrint, to: "/animal" },
+            { label: "nav.client", icon: Contact, to: "/client" },
             { label: "nav.document", icon: LucideFileText, to: "/document" },
-            { label: "nav.message", icon: ShoppingBag, to: "/message" },
-            { label: "nav.registration", icon: PersonStanding, to: "/registration" },
+            { label: "nav.message", icon: Mail, to: "/message" },
+            { label: "nav.registration", icon: StickyNotePlus, to: "/registration" },
             { label: "nav.memorandum", icon: AlarmClock, to: "/memorandum" },
             { label: "nav.archive", icon: Archive, to: "/archive" }
         ]
