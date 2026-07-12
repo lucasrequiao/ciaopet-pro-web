@@ -24,5 +24,32 @@
   },
   "dashboard": {
     "title": "Dashboard"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "quickActions": "Azioni rapide",
+    "groups": {
+      "business": "IL TUO NEGOZIO",
+      "client": "IL TUOI CLIENT",
+      "accounting": "CONTABILITÁ"
+    },
+    "app": "App",
+    "calendar": "Calendário",
+    "communications": "Comunicações",
+    "shop": "Comprar",
+    "staff": "Funcionários",
+    "animal": "Animais",
+    "client": "Clientes",
+    "generateDocument": "Gerar documentos",
+    "message": "Mensagens",
+    "registration": "Formulários de inscrição",
+    "memorandum": "Memorando",
+    "archive": "Arquivo",
+    "configuration": "Configuração",
+    "document": "Documentos",
+    "suppliers": "Fornecedores",
+    "priceList": "Lista de preços",
+    "movements": "Movimentos",
+    "report": "Relatórios"
   }
 }

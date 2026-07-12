@@ -1,6 +1,11 @@
+import { AppShell } from "@/components/layout/App-shell";
 import { useTranslation } from "react-i18next";
 
 export function DashboardPage() {
     const {t} = useTranslation()
-    return <h1 className="font-heading text-primary-dark">{t("dashboard.title")}</h1>
+    return (
+        <AppShell>
+            <p></p>
+        </AppShell>
+    )
 }
