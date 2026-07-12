@@ -27,11 +27,11 @@
   },
   "nav": {
     "dashboard": "Dashboard",
-    "quickActions": "Azioni rapide",
+    "quickActions": "Ações rápidas",
     "groups": {
-      "business": "IL TUO NEGOZIO",
-      "client": "IL TUOI CLIENT",
-      "accounting": "CONTABILITÁ"
+      "business": "SUA LOJA",
+      "client": "SEU CLIENTE",
+      "accounting": "CONTABILIDADE"
     },
     "app": "App",
     "calendar": "Calendário",
@@ -50,6 +50,12 @@
     "suppliers": "Fornecedores",
     "priceList": "Lista de preços",
     "movements": "Movimentos",
-    "report": "Relatórios"
+    "report": "Relatórios",
+    "version": "Versão 000.000.000"
+  },
+  "topbar": {
+    "searchPlaceholder": "Pesquisar....",
+    "notifications": "Notificação",
+    "language": "Idioma"
   }
 }

@@ -20,7 +20,7 @@ export function SidebarNavItem({ item }: SidebarNavItemProps) {
             to={item.to}
             className={({ isActive }) =>
                 cn(
-                    "flex items-center gap-3 rounded-lg px-3 py-2 text-sm",
+                    "flex items-center gap-3 rounded-lg px-3 py-1.5 text-sm",
                     isActive
                         ? "bg-primary/10 text-primary font-medium"
                         : "text-foreground hover:bg-muted"

@@ -50,6 +50,12 @@
     "suppliers": "Fornitori",
     "priceList": "Listino prezzi",
     "movements": "Movimenti",
-    "report": "Report"
+    "report": "Report",
+    "version": "Versione 000.000.000"
+  },
+  "topbar": {
+    "searchPlaceholder": "Cerca....",
+    "notifications": "Notifiche",
+    "language": "Lingua"
   }
 }

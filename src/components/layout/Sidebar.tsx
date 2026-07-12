@@ -3,7 +3,7 @@ import { navGroups } from "./sidebar-nav-config"
 import { SidebarNavItem } from "./SidebarNavItem"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { ArrowRight, ArrowRightCircle } from "lucide-react"
+import { ArrowRightCircle } from "lucide-react"
 
 
 export function Sidebar() {
@@ -47,7 +47,7 @@ export function Sidebar() {
                         </div>
                     </CardContent>
                 </Card> 
-                <p className="text-xs text-muted-foreground mt-2">Versione 000.000.000</p>            
+                <p className="text-xs text-muted-foreground mt-2">{t("nav.version")}</p>            
             </div>         
         </aside>
     )
