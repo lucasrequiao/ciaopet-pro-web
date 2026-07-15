@@ -9,9 +9,7 @@ type NavItem = {
     to:string
 }
 
-type SidebarNavItemProps = {
-    item: NavItem
-}
+type SidebarNavItemProps = { item: NavItem }
 
 export function SidebarNavItem({ item }: SidebarNavItemProps) {
     const {t} = useTranslation()

@@ -23,7 +23,10 @@
     "passwordRequired": "A senha é obrigatória"
   },
   "dashboard": {
-    "title": "Dashboard"
+    "title": "Dashboard",
+    "newFriends": "Novo amigo",
+    "seeAll": "Ver todos",
+    "seeCalendar": "Ver calendário"
   },
   "nav": {
     "dashboard": "Dashboard",
