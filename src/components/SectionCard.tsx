@@ -1,6 +1,5 @@
 import type { ReactNode } from "react"
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
 
 type SectionCardProps = {
     title: string
@@ -19,12 +18,12 @@ export function SectionCard({ title, variant, headerAction, footer, children }: 
                 )}
             >
                 <span>{title}</span>
-                {headerAction && <Button variant="ghost" size="xs">{headerAction}</Button>}      
+                {headerAction && <div className="text-xs">{headerAction}</div>}      
             </div>
             <div>
                 {children}
 
-                {footer && <div className="flex justify-center p-10 mx-2 text-xs border-t border-border">{footer}</div>}
+                {footer && <div className="flex justify-center px-10 py-20 text-xs border-t border-border">{footer}</div>}
             </div>
         </div>
     )

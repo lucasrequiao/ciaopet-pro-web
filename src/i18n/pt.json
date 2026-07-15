@@ -26,7 +26,9 @@
     "title": "Dashboard",
     "newFriends": "Novo amigo",
     "seeAll": "Ver todos",
-    "seeCalendar": "Ver calendário"
+    "todayAgenda": "Agenda de hoje",
+    "seeCalendar": "Ver calendário",
+    "newAppointment": "Novo compromisso"
   },
   "nav": {
     "dashboard": "Dashboard",

@@ -5,7 +5,7 @@ type PetListItemProps = { pet: Pet }
 
 export function PetListItem({ pet }: PetListItemProps) {
     return (
-        <div className="flex items-center gap-2 p-2">
+        <div className="flex items-center gap-2 p-2 py-3">
             <Avatar size="lg">
                 <AvatarImage src={pet.avatarUrl}/>
                 <AvatarFallback>{pet.name.slice(0, 2).toUpperCase()}</AvatarFallback>
