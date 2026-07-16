@@ -23,7 +23,7 @@ export function SectionCard({ title, variant, headerAction, footer, children }: 
             <div>
                 {children}
 
-                {footer && <div className="flex justify-center px-10 py-20 text-xs border-t border-border">{footer}</div>}
+                {footer && <div className="flex justify-center px-10 py-20 text-xs">{footer}</div>}
             </div>
         </div>
     )

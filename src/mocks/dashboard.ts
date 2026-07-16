@@ -52,3 +52,18 @@ export const appointmentsMock: Appointment[] = [
     status: "attention",
   },
 ];
+
+export type Reminder = {
+  id: string
+  petName: string
+  title: string
+  dueAt: string
+}
+
+const daysFromNow = (days: number) => new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString()
+
+export const remindersMock: Reminder[] = [
+  { id: "rem-001", petName: "Rocky", title: "Richiamo tra 5 giorni",        dueAt: daysFromNow(5) },
+  { id: "rem-002", petName: "Luna",  title: "Trattamento antiparassitario", dueAt: daysFromNow(7) },
+  { id: "rem-003", petName: "Teddy", title: "Taglio unghie",                dueAt: daysFromNow(10) },
+];
