@@ -11,7 +11,7 @@ type SectionCardProps = {
 
 export function SectionCard({ title, variant, headerAction, footer, children }: SectionCardProps) {
     return (
-        <div className="max-w-xs bg-white rounded-sm border border-border">
+        <div className="max-w-2xs bg-white rounded-sm border border-border">
             <div className={cn(
                 "flex items-center justify-between px-4 py-2",
                 variant === "filled" ? "bg-primary text-white rounded-t-sm" : "text-foreground rounded-t-sm"

@@ -67,3 +67,19 @@ export const remindersMock: Reminder[] = [
   { id: "rem-002", petName: "Luna",  title: "Trattamento antiparassitario", dueAt: daysFromNow(7) },
   { id: "rem-003", petName: "Teddy", title: "Taglio unghie",                dueAt: daysFromNow(10) },
 ];
+
+export type DashboardStats = {
+  registeredPets: number
+  todayAppointments: number
+  tutorMessages: number
+  inProgress: number
+  checkIns: number
+}
+
+export const statsMock: DashboardStats = {
+  registeredPets: 120,
+  todayAppointments: 34,
+  tutorMessages: 7,
+  inProgress: 1,
+  checkIns: 3  
+}

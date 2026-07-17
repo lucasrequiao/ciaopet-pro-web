@@ -23,7 +23,13 @@
     "passwordRequired": "A senha é obrigatória"
   },
   "dashboard": {
-    "title": "Dashboard",
+    "stats": {
+      "registeredPets": "Animal cadastrado",
+      "todayAppointments": "Compromissos hoje!",
+      "tutorMessages": "Mensagens dos tutores",
+      "inProgress": "Em andamento",
+      "checkIns": "Check-in"
+    },
     "newFriends": "Novo amigo",
     "seeAll": "Ver todos",
     "todayAgenda": "Agenda de hoje",
