@@ -4,7 +4,7 @@ import type { LucideIcon } from "lucide-react";
 
 const variantClasses: Record<StatCardVariant, { card: string; value: string }> = {
     default: {
-        card: "bg-white text-primary",
+        card: "bg-white text-primary-dark",
         value: "text-primary"
     },
     filled: {
@@ -27,17 +27,20 @@ export function StatCard({ value, label, icon: Icon, variant }: StatCardProps) {
             variantClasses[variant].card
             )}
         >
-            <div className="flex flex-col">
+            <div className="flex flex-col py-3">
                 <span className={cn(
-                    "text-5xl font-medium",
+                    "text-4xl font-medium",
                     variantClasses[variant].value
                 )}>
                     {value}
                 </span>
-                <span className="text-md font-medium">{label}</span>
+                <span className="text-sm font-medium">{label}</span>
             </div>
             <div className="ml-auto">
-                <Icon className="h-15 w-15"/>  
+                <Icon className={cn(
+                    "h-12 w-12",
+                    variantClasses[variant].value
+                )}/>  
             </div>
         </div>
     )

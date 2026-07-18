@@ -34,7 +34,12 @@
     "seeAll": "Vedi tutti",
     "todayAgenda": "Agenda di oggi",
     "seeCalendar": "Vedi calendario",
-    "newAppointment": "Nuovo appuntamento"
+    "newAppointment": "Nuovo appuntamento",
+    "memorandum": "Promemoria",
+    "activitiesInProgress": "Attività in corso",
+    "activities": {
+      "inProgress": "In corso"
+    }
   },
   "nav": {
     "dashboard": "Dashboard",

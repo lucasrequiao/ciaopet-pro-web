@@ -27,7 +27,7 @@ export function Sidebar() {
 
             {/* pé: FORA da região rolável — fica pregado embaixo */}
             <div className="pt-3 px-3">
-                <Card className="bg-primary/10 max-w-64 pt-1 pb-1">
+                <Card className="bg-primary/10 max-w-55 pt-1 pb-1">
                     <CardHeader>
                         <CardTitle className="text-xl text-primary">CiaoPet® PRO</CardTitle>
                         <CardDescription>

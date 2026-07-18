@@ -7,17 +7,22 @@ type SectionCardProps = {
     headerAction?: ReactNode       //link a direita do título
     footer?: ReactNode
     children: ReactNode
+    className?: string
 }
 
-export function SectionCard({ title, variant, headerAction, footer, children }: SectionCardProps) {
+export function SectionCard({ title, variant, headerAction, footer, children, className }: SectionCardProps) {
     return (
-        <div className="max-w-2xs bg-white rounded-sm border border-border">
+        <div className={cn(
+                "bg-white rounded-sm border border-border",
+                className
+            )}
+        >
             <div className={cn(
-                "flex items-center justify-between px-4 py-2",
+                "flex items-center justify-between px-3 py-2",
                 variant === "filled" ? "bg-primary text-white rounded-t-sm" : "text-foreground rounded-t-sm"
                 )}
             >
-                <span>{title}</span>
+                <span className="font-semibold">{title}</span>
                 {headerAction && <div className="text-xs">{headerAction}</div>}      
             </div>
             <div>
