@@ -38,7 +38,14 @@
     "memorandum": "Memorando",
     "activitiesInProgress": "Atividades em andamento",
     "activities": {
-      "inProgress": "Em andamento"
+      "inProgress": "Em andamento",
+      "print": "Imprimir",
+      "export": "Exportar"
+    },
+    "loyalClients": {
+      "title": "Clientes fiéis",
+      "newThisMonth_one": "+{{count}} novo este mês",
+      "newThisMonth_other": "+{{count}} novos este mês"
     }
   },
   "nav": {

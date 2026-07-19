@@ -101,3 +101,13 @@ export const statsMock: DashboardStats = {
   inProgress: 1,
   checkIns: 3  
 }
+
+export type LoyalClientsStats = {
+  total: number
+  newThisMonth: number
+}
+
+export const loyalClientsMock: LoyalClientsStats = {
+  total: 92,
+  newThisMonth: 8
+}

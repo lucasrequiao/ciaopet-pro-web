@@ -38,7 +38,14 @@
     "memorandum": "Promemoria",
     "activitiesInProgress": "Attività in corso",
     "activities": {
-      "inProgress": "In corso"
+      "inProgress": "In corso",
+      "print": "Stampa",
+      "export": "Esportare"
+    },
+    "loyalClients": {
+      "title": "Clienti fedeli",
+      "newThisMonth_one": "+{{count}} nuovo questo mese",
+      "newThisMonth_other": "+{{count}} nuovi questo mese"
     }
   },
   "nav": {
