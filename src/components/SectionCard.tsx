@@ -22,7 +22,7 @@ export function SectionCard({ title, variant, headerAction, footer, children, cl
                 variant === "filled" ? "bg-primary text-white rounded-t-sm" : "text-foreground rounded-t-sm"
                 )}
             >
-                <span className="font-semibold">{title}</span>
+                <span>{title}</span>
                 {headerAction && <div className="text-xs">{headerAction}</div>}      
             </div>
             <div>

@@ -2,7 +2,7 @@ import { AppShell } from "@/components/layout/App-shell";
 import { SectionCard } from "@/components/SectionCard";
 import { AppointmentItem } from "@/features/dashboard/appointment-list-item";
 import { PetListItem } from "@/features/dashboard/pet-list-item";
-import { newPetsMock, appointmentsMock, remindersMock, statsMock, activitiesMock, loyalClientsMock } from "@/mocks/dashboard";
+import { newPetsMock, appointmentsMock, remindersMock, statsMock, activitiesMock, loyalClientsMock, cashflowMock } from "@/mocks/dashboard";
 import { useTranslation } from "react-i18next";
 import { tenantConfigMock } from "@/mocks/tenant"
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,7 @@ import { StatCard } from "@/components/StatCard";
 import { statsConfig } from "@/features/dashboard/stats-config";
 import { ActivityItem } from "@/features/dashboard/activity-list-item";
 import { LoyalClientsCard } from "@/features/dashboard/loyal-clients-card";
+import { CashflowCard } from "@/features/dashboard/cashflow-card";
 
 export function DashboardPage() {
     const{t} = useTranslation()
@@ -64,7 +65,8 @@ export function DashboardPage() {
                 </SectionCard>          
             </div>
             <div className="grid grid-cols-5 gap-4">
-                <LoyalClientsCard stats={loyalClientsMock}/>          
+                <LoyalClientsCard stats={loyalClientsMock}/>    
+                <CashflowCard summary={cashflowMock} locale={tenantConfigMock.locale} currency={tenantConfigMock.currency}/>      
             </div>
         </AppShell>
     )

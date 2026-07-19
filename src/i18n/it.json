@@ -46,6 +46,15 @@
       "title": "Clienti fedeli",
       "newThisMonth_one": "+{{count}} nuovo questo mese",
       "newThisMonth_other": "+{{count}} nuovi questo mese"
+    },
+    "cashflow": {
+      "title": "Flussi di cassa", 
+      "since": "dati raccolti dal {{date}}",
+      "totalReceived": "Totale incassato",
+      "receivable": "Da incassare",
+      "totalPaid": "Totale pagato",
+      "payable": "Da pagare",
+      "toggleVisibility": "attiva/disattiva Visibilità" 
     }
   },
   "nav": {

@@ -46,6 +46,15 @@
       "title": "Clientes fiéis",
       "newThisMonth_one": "+{{count}} novo este mês",
       "newThisMonth_other": "+{{count}} novos este mês"
+    },
+    "cashflow": {
+      "title": "Fluxo de caixa",
+      "since": "dados coletados desde {{date}}",
+      "totalReceived": "Total arrecadado",
+      "receivable": "Para ser coletado",
+      "totalPaid": "Total pago",
+      "payable": "A ser pago",
+      "toggleVisibility": "alternar visibilidade"
     }
   },
   "nav": {

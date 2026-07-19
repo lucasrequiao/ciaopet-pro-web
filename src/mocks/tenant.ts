@@ -1,9 +1,11 @@
 export type TenantConfig = {
     locale: string,
-    timeZone: string
+    timeZone: string,
+    currency: string
 }
 
 export const tenantConfigMock: TenantConfig = {
     locale: "it-IT",
-    timeZone: "Europe/Rome"
+    timeZone: "Europe/Rome",
+    currency: "EUR"
 }

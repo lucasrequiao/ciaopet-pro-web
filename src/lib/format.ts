@@ -19,3 +19,11 @@ export function daysUntil(iso: string): number {
     // Converte a diferença para dias e arredonda para cima
     return Math.ceil(diffInMs / msPerDay);
 }
+
+export function formatCurrency(cents: number, locale:string, currency: string): string {
+    return new Intl.NumberFormat(locale, { style: "currency", currency }).format(cents / 100)
+}
+
+export function formatDate(isoDate: string, locale: string): string {
+    return new Intl.DateTimeFormat(locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(isoDate))
+} 

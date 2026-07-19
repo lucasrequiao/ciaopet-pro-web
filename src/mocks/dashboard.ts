@@ -111,3 +111,19 @@ export const loyalClientsMock: LoyalClientsStats = {
   total: 92,
   newThisMonth: 8
 }
+
+export type CashflowSummary = {
+  totalReceived: number
+  receivable: number
+  totalPaid: number
+  payable: number
+  collectedSince: string
+}
+
+export const cashflowMock: CashflowSummary = {
+  totalReceived: 1696750,
+  receivable: 355000,
+  totalPaid: 0,
+  payable: 0,
+  collectedSince: "2026-05-02"
+}
