@@ -18,8 +18,8 @@ export function SectionCard({ title, variant, headerAction, footer, children, cl
             )}
         >
             <div className={cn(
-                "flex items-center justify-between px-3 py-2",
-                variant === "filled" ? "bg-primary text-white rounded-t-sm" : "text-foreground rounded-t-sm"
+                "flex items-center justify-between px-2 py-2",
+                variant === "filled" ? "bg-primary text-white font-medium rounded-t-sm" : "text-foreground font-medium rounded-t-sm"
                 )}
             >
                 <span>{title}</span>

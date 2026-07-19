@@ -55,6 +55,11 @@
       "totalPaid": "Total pago",
       "payable": "A ser pago",
       "toggleVisibility": "alternar visibilidade"
+    },
+    "notes": {
+      "title": "Anotações e memorandos",
+      "placeholder": "Anote aqui...",
+      "save": "Salvar"
     }
   },
   "nav": {

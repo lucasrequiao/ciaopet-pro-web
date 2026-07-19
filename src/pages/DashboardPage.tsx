@@ -14,6 +14,7 @@ import { statsConfig } from "@/features/dashboard/stats-config";
 import { ActivityItem } from "@/features/dashboard/activity-list-item";
 import { LoyalClientsCard } from "@/features/dashboard/loyal-clients-card";
 import { CashflowCard } from "@/features/dashboard/cashflow-card";
+import { NotesCard } from "@/features/dashboard/notes-card";
 
 export function DashboardPage() {
     const{t} = useTranslation()
@@ -66,7 +67,8 @@ export function DashboardPage() {
             </div>
             <div className="grid grid-cols-5 gap-4">
                 <LoyalClientsCard stats={loyalClientsMock}/>    
-                <CashflowCard summary={cashflowMock} locale={tenantConfigMock.locale} currency={tenantConfigMock.currency}/>      
+                <CashflowCard summary={cashflowMock} locale={tenantConfigMock.locale} currency={tenantConfigMock.currency}/> 
+                <NotesCard />     
             </div>
         </AppShell>
     )

@@ -55,7 +55,12 @@
       "totalPaid": "Totale pagato",
       "payable": "Da pagare",
       "toggleVisibility": "attiva/disattiva Visibilità" 
-    }
+    },
+    "notes": {
+      "title": "Note e appunti",
+      "placeholder": "Appunta qui...",
+      "save": "Salva"
+    }  
   },
   "nav": {
     "dashboard": "Dashboard",
