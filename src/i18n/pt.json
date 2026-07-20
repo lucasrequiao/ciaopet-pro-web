@@ -30,12 +30,17 @@
       "inProgress": "Em andamento",
       "checkIns": "Check-in"
     },
-    "newFriends": "Novo amigo",
-    "seeAll": "Ver todos",
+    "newFriends": {
+      "title": "Novos amigos",
+      "seeAll": "Ver tudo"
+    },
     "todayAgenda": "Agenda de hoje",
     "seeCalendar": "Ver calendário",
     "newAppointment": "Novo compromisso",
-    "memorandum": "Memorando",
+    "memorandum": {
+      "title": "Memorando",
+      "seeAll": "Ver tudo"
+    },
     "activitiesInProgress": "Atividades em andamento",
     "activities": {
       "inProgress": "Em andamento",
@@ -60,7 +65,15 @@
       "title": "Anotações e memorandos",
       "placeholder": "Anote aqui...",
       "save": "Salvar"
-    }
+    },
+    "news": {
+      "cta": "Últimas notícias > veja as últimas atualizações.",
+      "developedBy": "Desenvolvido por"
+    },
+    "pageActions": {
+      "print": "imprimir",
+      "export": "exportar"
+    }  
   },
   "nav": {
     "dashboard": "Dashboard",

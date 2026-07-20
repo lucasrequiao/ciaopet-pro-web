@@ -30,12 +30,17 @@
       "inProgress": "In corso",
       "checkIns": "Check-in"
     },
-    "newFriends": "Nuovi amici",
-    "seeAll": "Vedi tutti",
+    "newFriends": {
+      "title": "Nuovi amici",
+      "seeAll": "Vedi tutte"
+    },
     "todayAgenda": "Agenda di oggi",
     "seeCalendar": "Vedi calendario",
     "newAppointment": "Nuovo appuntamento",
-    "memorandum": "Promemoria",
+    "memorandum": {
+      "title": "Promemoria",
+      "seeAll": "Vedi tutti"
+    },
     "activitiesInProgress": "Attività in corso",
     "activities": {
       "inProgress": "In corso",
@@ -60,6 +65,14 @@
       "title": "Note e appunti",
       "placeholder": "Appunta qui...",
       "save": "Salva"
+    },
+    "news": {
+      "cta": "Ultime novità > scopri ultimi aggiornamenti.",
+      "developedBy": "Sviluppato da"
+    },
+    "pageActions": {
+      "print": "stampa",
+      "export": "esportare"
     }  
   },
   "nav": {
