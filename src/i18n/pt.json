@@ -73,6 +73,11 @@
     "pageActions": {
       "print": "imprimir",
       "export": "exportar"
+    },
+    "greeting": {
+      "title": "Bom dia, Sr. {{name}}!",
+      "subtitle": "Eis o que está acontecendo na sua loja hoje.",
+      "dateTime": "{{date}} ({{timeZone}}) | {{time}} Horas ({{location}})"
     }  
   },
   "nav": {

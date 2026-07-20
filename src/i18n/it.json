@@ -73,6 +73,11 @@
     "pageActions": {
       "print": "stampa",
       "export": "esportare"
+    },
+    "greeting": {
+      "title": "Buongiorno, Sig. {{name}}!",
+      "subtitle": "Ecco cosa sta succedendo nel tuo negozio oggi.",
+      "dateTime": "{{date}} ({{timeZone}}) | {{time}} Orario ({{location}})"
     }  
   },
   "nav": {

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 export function NotesCard() {
     const {t} = useTranslation()
     return (
-        <SectionCard title="Note e appunti">
+        <SectionCard title={t("dashboard.notes.title")}>
             <div className="flex flex-col items-center justify-center px-2 gap-4">
                 <Input placeholder={t("dashboard.notes.placeholder")} className="px-2 h-10"/>
                 <button type="button" aria-label={t("dashboard.notes.save")}>

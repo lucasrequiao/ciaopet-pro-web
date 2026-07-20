@@ -27,3 +27,16 @@ export function formatCurrency(cents: number, locale:string, currency: string): 
 export function formatDate(isoDate: string, locale: string): string {
     return new Intl.DateTimeFormat(locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(isoDate))
 } 
+
+export function formatFullDate(date: Date, locale: string, timeZone: string): string {
+    return new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone }).format(date)
+}
+
+export function formatTimeZoneAbbr(date: Date, locale: string, timeZone: string): string {
+    const parts = new Intl.DateTimeFormat(locale, { timeZone, timeZoneName: "short" }).formatToParts(date)
+    return parts.find((p) => p.type === "timeZoneName")?.value ?? ""
+}
+
+export function capitalize(text: string): string {
+    return text.charAt(0).toUpperCase() + text.slice(1)
+}
