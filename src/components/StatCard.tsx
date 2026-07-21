@@ -18,13 +18,15 @@ type StatCardProps = {
     label: string
     icon: LucideIcon
     variant: StatCardVariant
+    className?: string
  }
 
-export function StatCard({ value, label, icon: Icon, variant }: StatCardProps) {
+export function StatCard({ value, label, icon: Icon, variant, className }: StatCardProps) {
     return (
         <div className={cn(
             "flex items-center rounded-sm border border-border px-5",
-            variantClasses[variant].card
+            variantClasses[variant].card,
+            className
             )}
         >
             <div className="flex flex-col py-3">

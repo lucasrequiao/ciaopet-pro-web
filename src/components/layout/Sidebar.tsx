@@ -4,13 +4,18 @@ import { SidebarNavItem } from "./SidebarNavItem"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ArrowRightCircle } from "lucide-react"
+import { cn } from "@/lib/utils"
 
+type SidebarProps = { className?: string }
 
-export function Sidebar() {
+export function Sidebar({ className }: SidebarProps) {
     const {t} = useTranslation()
     return (
-        <aside className="flex h-full flex-col border-r border-border">  
-            {/* futuro logo do tenant aqui, fixo no topo */}
+        <aside className={cn(
+                "flex h-full flex-col border-r border-border", className
+            )}
+        >  
+            <span className="text-4xl font-bold px-4 pt-10 pb-5">WashDog</span>
 
             {/* região da NAV: elástica e rolável */}  
             <nav className="min-h-0 flex-1 overflow-y-auto px-2">
@@ -41,7 +46,7 @@ export function Sidebar() {
                                 <AvatarImage src="https://github.com/shadcn.png"/>
                                 <AvatarFallback>LR</AvatarFallback>
                             </Avatar>
-                            <button type="button" aria-label="Profile" className="ml-auto">
+                            <button type="button" aria-label={t("nav.card.profile")} className="ml-auto">
                                 <ArrowRightCircle className="size-6 text-primary"/>
                             </button>
                         </div>

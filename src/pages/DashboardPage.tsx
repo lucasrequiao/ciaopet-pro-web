@@ -17,24 +17,37 @@ import { CashflowCard } from "@/features/dashboard/cashflow-card";
 import { NotesCard } from "@/features/dashboard/notes-card";
 import { NewsBar } from "@/features/dashboard/news-bar";
 import { Printer, FileOutput } from "lucide-react";
+import { DashboardGreeting } from "@/features/dashboard/dashboard-greeting";
 
 export function DashboardPage() {
     const{t} = useTranslation()
     return (
         <AppShell>
             <div className="flex flex-col space-y-4">
-                <div className="grid grid-cols-5 gap-4">
-                    {statsConfig.map((entry) => (
-                        <StatCard
-                            key={entry.statKey}
-                            value={statsMock[entry.statKey]}
-                            label={t(entry.labelKey)}
-                            icon={entry.icon}
-                            variant={entry.variant}
-                        />
-                    ))}
+                <DashboardGreeting locale={tenantConfigMock.locale} timeZone={tenantConfigMock.timeZone} locationLabel={tenantConfigMock.locationLabel}/>
+                <div className="flex items-center gap-3">
+                    <div className="flex-1 min-w-0 grid grid-cols-1 gap-4 
+                            md:flex md:snap-x md:snap-mandatory md:overflow-x-auto 
+                            md:scrollbar-none md:[&::-webkit-scrollbar]:hidden 
+                            lg:grid lg:grid-cols-5 lg:overflow-visible">
+                        {statsConfig.map((entry) => (
+                            <StatCard
+                                key={entry.statKey}
+                                value={statsMock[entry.statKey]}
+                                label={t(entry.labelKey)}
+                                icon={entry.icon}
+                                variant={entry.variant}
+                                className="md:w-56 md:shrink-0 md:snap-start lg:w-auto"
+                            />
+                        ))}
+                    </div>
+                    <div className="hidden md:flex lg:hidden items-center gap-1.5" aria-hidden="true">
+                        <span className="h-2 w-2 rounded-full bg-primary" />
+                        <span className="h-2 w-2 rounded-full bg-primary/40" />
+                        <span className="h-2 w-2 rounded-full bg-primary/40" />                          
+                    </div>
                 </div>
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-[1fr_1fr_1fr_4fr] lg:grid-cols-5">
                     <SectionCard title={t("dashboard.newFriends.title")} variant="filled" footer={<Link to="/registration" className="hover:underline">{t("dashboard.newFriends.seeAll")}</Link>}>
                         <div className="px-2 py-2 divide-y divide-border">
                             {newPetsMock.map((pet) => (
@@ -62,7 +75,7 @@ export function DashboardPage() {
                         ))}
                         </div>
                     </SectionCard>
-                    <div className="flex flex-col col-span-2 row-span-2 gap-3">
+                    <div className="flex flex-col gap-3 md:row-span-2 lg:col-span-2">
                         <SectionCard title={t("dashboard.activitiesInProgress")} className="flex-1">
                             {activitiesMock.map((activity) => (
                                     <ActivityItem key={activity.id} activity={activity} />

@@ -8,8 +8,9 @@ export function Topbar() {
 
     return (
         <header className="flex items-center gap-4 px-6 py-3">
-            <button type="button" aria-label="Menu" className="text-primary">
-                <Menu className="size-7"/>
+            <span className="text-4xl font-bold lg:hidden">WashDog</span>
+            <button type="button" aria-label={t("topbar.menu")} className="text-primary">
+                    <Menu className="size-7"/>
             </button>
             <div className="relative w-full max-w-md ml-auto">
                 <Search className="absolute text-muted-foreground left-2 top-1/2 size-6 -translate-y-1/2"/>
@@ -19,7 +20,7 @@ export function Topbar() {
             {/* sino com badge */}
             <button type="button" aria-label={t("topbar.notifications")} className="relative text-primary">
                 <Bell className="size-8"/>
-                <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent-red px-1 pt-1 text-[12px] font-medium text-white">
+                <span className="absolute -top-1 -right-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-accent-red px-1 text-[12px] font-medium text-white">
                     70
                 </span>
             </button>

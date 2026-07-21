@@ -106,9 +106,13 @@
     "priceList": "Listino prezzi",
     "movements": "Movimenti",
     "report": "Report",
-    "version": "Versione 000.000.000"
+    "version": "Versione 000.000.000",
+    "card": {
+      "profile": "profilo"
+    }
   },
   "topbar": {
+    "menu": "Menu",
     "searchPlaceholder": "Cerca....",
     "notifications": "Notifiche",
     "language": "Lingua"
